@@ -82,7 +82,7 @@ If you would rather give an assistant these tools over MCP than write a loop, Cl
 ## Get an API key
 
 1. Create a Cleat account at [cleat.so](https://cleat.so) and subscribe to a line — $24.99/month or $249.90/year.
-2. Verify your identity once, with a government ID. Until the workspace owner has verified, the API answers `403`: the line runs and keeps every text, but nothing can be read. An agent cannot do this step.
+2. Verify your identity once, with a government ID. Until the workspace owner has verified, reading a line's messages answers `403` with `code` `verify_first`: the line runs and keeps every text, but nothing can be read. Listing lines still works. An agent cannot do this step.
 3. In **workspace settings → API keys**, create a key. It starts with `clt_` and is shown once.
 4. **Scope it to the one line and set an expiry.** That is what makes a key safe to hand to an agent: a line outside the scope answers `404`, and after the expiry the key answers `401` with `key_expired`. Revoking it locks the agent out on its next call and touches nothing else — no password, no session, no other line.
 
