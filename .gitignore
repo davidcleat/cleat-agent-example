@@ -1,0 +1,15 @@
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Never commit a key. Nothing here needs one at build time.
+.env
+.env.*
+!.env.example
+
+coverage/
+*.tgz
+.DS_Store
+.idea/
+.vscode/

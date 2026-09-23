@@ -1,0 +1,23 @@
+{
+  "name": "cleat-agent-example",
+  "version": "0.1.0",
+  "description": "A small, honest example of an AI agent finishing a sign-in on its owner's own account by reading the code off a Cleat US mobile line.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node src/main.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidcleat/cleat-agent-example.git"
+  },
+  "homepage": "https://cleat.so/for/ai-agents"
+}
